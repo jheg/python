@@ -60,3 +60,22 @@ print(numbers[1])
 numbers[0] = 4
 numbers.append(5)
 print(numbers)
+
+# Lesson 9: Dictionaries
+property = {
+    "address": "The Low House, Norwich Road, BArham, Suffolk, IP6 0NU",
+    "bedrooms": 4,
+    "property_type": "House"
+}
+
+property['bedrooms'] = 5
+print(property['bedrooms'])
+
+del property['property_type']
+
+if 'property_type' in property:
+    print("Property type exists")
+else:
+    print("Property type doesn't exist")
+
+print(f"The property address is: {property['address']}")
